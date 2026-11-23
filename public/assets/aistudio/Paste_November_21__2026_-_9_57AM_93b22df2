@@ -1,0 +1,1235 @@
+# MASTER PRODUCT BUILD PROMPT
+# FIREWORK AI — THE INTELLIGENT WORK ECOSYSTEM
+
+You are an elite software engineering team consisting of:
+- Principal Software Architect
+- Senior Full-Stack Developer
+- AI Agent Engineer
+- UI/UX Designer specialized in Apple design systems
+- Database Architect
+- Cybersecurity Engineer
+- Motion Design Engineer
+
+Your mission is to DESIGN, ENGINEER, AND BUILD a complete, production-oriented web application named **Firework AI**.
+
+This is not a landing-page project, a static prototype, or a visual demonstration.
+
+Build a functional, scalable, intelligent freelancing and business-work ecosystem that connects clients, business owners, and independent professionals through a powerful AI agent named **Lens AI**.
+
+Every major interface element must have a meaningful function. Every action must be connected to actual application logic. Every persistent operation must use a real database.
+
+Do not simulate functionality, invent successful operations, use fake statistics, or display placeholder results as actual user data.
+
+Do not write labels such as "This is real" or "Real functionality". Simply implement the functionality.
+
+==================================================
+01. PRODUCT IDENTITY AND VISION
+==================================================
+
+Product name: Firework AI
+
+Main AI assistant: Lens AI
+
+Product category:
+AI-powered freelancing, project management, business collaboration, and intelligent work automation platform.
+
+Core vision:
+
+Create a unified digital workspace where:
+1. Business owners can publish projects and find suitable professionals.
+2. Freelancers can discover opportunities, submit proposals, and manage their work.
+3. Users can manage their professional activities from one intelligent workspace.
+4. Lens AI can understand user intentions, navigate the application, retrieve information, and execute authorized operations.
+5. The platform can intelligently organize work, recommend opportunities, and reduce unnecessary manual operations.
+
+The platform must feel like a sophisticated Apple ecosystem product rather than a conventional freelancing website.
+
+Brand personality:
+- Intelligent
+- Minimal
+- Premium
+- Professional
+- Modern
+- Reliable
+- Calm
+- Efficient
+
+==================================================
+02. DESIGN SYSTEM — MACOS LIQUID GLASS
+==================================================
+
+Design the entire experience around Apple's macOS visual language and Liquid Glass design principles.
+
+The design must feel native to a modern Mac environment.
+
+VISUAL PRINCIPLES:
+
+- Layered translucent surfaces.
+- Sophisticated glass materials.
+- Subtle background blur.
+- Soft depth and realistic shadows.
+- Carefully controlled transparency.
+- Smooth transitions between interface states.
+- Rounded corners with consistent geometry.
+- Refined typography.
+- Excellent spacing and alignment.
+- Minimal visual noise.
+- Clear information hierarchy.
+
+COLOR SYSTEM:
+
+Use a consistent premium color palette.
+
+Primary background:
+#F5F6F8
+
+Dark background:
+#101116
+
+Primary surface:
+#FFFFFF
+
+Dark surface:
+#1A1C24
+
+Primary accent:
+#7657E8
+
+Secondary accent:
+#A78BFA
+
+Soft blue:
+#7DA9FF
+
+Success:
+#39B982
+
+Warning:
+#E6AE53
+
+Error:
+#E36C76
+
+Primary text:
+#171820
+
+Secondary text:
+#777987
+
+Glass borders:
+White with subtle transparency.
+
+IMPORTANT COLOR RULES:
+
+- Purple is the primary brand accent.
+- Use blue only as a supporting accent.
+- Do not overuse gradients.
+- Avoid excessively saturated colors.
+- Avoid rainbow effects.
+- Avoid unnecessary glowing elements.
+- Maintain excellent text contrast.
+- Use color to communicate states, not decorate everything.
+
+LIGHT MODE AND DARK MODE:
+
+Implement complete Light Mode and Dark Mode.
+
+The selected theme must:
+- Persist across sessions.
+- Apply consistently to all pages.
+- Respect system appearance when the user selects automatic mode.
+- Update all components without visual inconsistencies.
+
+TYPOGRAPHY:
+
+Use Inter or a comparable modern interface font.
+
+Use an appropriate Arabic font such as IBM Plex Sans Arabic or a visually compatible alternative.
+
+Ensure correct RTL and LTR layouts.
+
+ANIMATIONS:
+
+Use Framer Motion or an equivalent animation system.
+
+Implement:
+- Smooth page transitions.
+- Subtle element entrance animations.
+- Spring-based interactions.
+- Animated sidebar transitions.
+- Smooth dropdown appearances.
+- Hover depth effects.
+- Button press feedback.
+- Modal transitions.
+- Skeleton loading animations.
+- Fluid navigation.
+- Animated status indicators.
+- Smooth scrolling where appropriate.
+
+Animations must remain lightweight and respect reduced-motion accessibility settings.
+
+Do not animate every element unnecessarily.
+
+==================================================
+03. APPLICATION LAYOUT
+==================================================
+
+Create a responsive application shell optimized primarily for macOS desktop screens.
+
+The desktop interface should contain:
+
+A. MAC-STYLE SIDEBAR
+
+A refined translucent sidebar containing:
+
+- Firework AI logo.
+- Home.
+- My Workspace.
+- Discover Projects.
+- Find Freelancers.
+- My Projects.
+- Messages.
+- Tasks.
+- Calendar.
+- Saved Items.
+- Lens AI.
+- Notifications.
+- Settings.
+
+The sidebar must support:
+- Expand and collapse.
+- Icon-only mode.
+- Active navigation indicators.
+- Smooth animations.
+- Persistent user preference.
+
+B. TOP NAVIGATION BAR
+
+Include:
+- Current page title.
+- Global search.
+- Quick actions.
+- Notification center.
+- Lens AI shortcut.
+- User profile avatar.
+- Theme controls.
+
+C. MAIN CONTENT AREA
+
+A flexible workspace with:
+- Responsive content containers.
+- Modular cards.
+- Context-aware widgets.
+- Proper spacing.
+- Adaptive layouts.
+
+D. COMMAND CENTER
+
+Implement a global command palette activated through Cmd + K on macOS and Ctrl + K on other platforms.
+
+It should allow users to:
+- Navigate between pages.
+- Search projects.
+- Search freelancers.
+- Create a project.
+- Create a task.
+- Open Lens AI.
+- Change application preferences.
+- Execute supported quick actions.
+
+==================================================
+04. AUTHENTICATION AND USER ACCOUNTS
+==================================================
+
+Implement complete authentication.
+
+Support:
+- Email and password registration.
+- Login.
+- Logout.
+- Google authentication where supported.
+- Password recovery.
+- Email verification.
+- Session persistence.
+- Protected routes.
+
+During registration, collect:
+
+- Full name.
+- Email.
+- Profile picture.
+- Account type.
+- Professional interests.
+- Skills.
+- Preferred language.
+- Country.
+- Short biography.
+
+ACCOUNT TYPES:
+
+1. Freelancer
+2. Client / Business Owner
+
+Users must be able to configure their professional identity.
+
+Allow users to complete their profile progressively.
+
+USER PROFILE:
+
+Include:
+- Profile image.
+- Full name.
+- Professional title.
+- Biography.
+- Skills.
+- Portfolio.
+- Work history.
+- Completed projects.
+- Professional availability.
+- Preferred work categories.
+- Social and professional links.
+
+Allow users to edit and save their information.
+
+Use proper database validation and access permissions.
+
+==================================================
+05. MAIN DASHBOARD
+==================================================
+
+Create an intelligent dashboard that changes according to the user's account type.
+
+FREELANCER DASHBOARD:
+
+Display:
+- Welcome message.
+- Personalized overview.
+- Recommended projects.
+- Active projects.
+- Pending proposals.
+- Current tasks.
+- Upcoming deadlines.
+- Recent messages.
+- Saved projects.
+- Work status.
+- Lens AI insights.
+
+CLIENT DASHBOARD:
+
+Display:
+- Published projects.
+- Active contracts or engagements.
+- Received proposals.
+- Recommended freelancers.
+- Project progress.
+- Pending decisions.
+- Recent activity.
+- Messages.
+- Lens AI recommendations.
+
+All statistics must come from actual database records.
+
+For accounts without data, show useful onboarding states rather than fabricated numbers.
+
+==================================================
+06. WORK MODE AND SLEEP MODE
+==================================================
+
+Implement two functional operating modes.
+
+WORK MODE:
+
+This is the active productivity environment.
+
+When enabled:
+- Display active workspace information.
+- Prioritize relevant tasks.
+- Display active projects.
+- Show upcoming deadlines.
+- Enable work-related Lens AI suggestions.
+- Prioritize suitable project recommendations.
+- Provide access to productivity tools.
+- Display the user's current availability status.
+
+SLEEP MODE:
+
+This is a low-activity state.
+
+When enabled:
+- Update the user's availability status.
+- Stop showing the user as actively available for new work.
+- Reduce nonessential notifications according to notification preferences.
+- Pause optional proactive recommendations.
+- Preserve all ongoing projects and task information.
+- Keep essential account and security notifications available.
+- Allow the user to return to Work Mode immediately.
+
+MODE MANAGEMENT:
+
+Users must be able to switch between modes through:
+- Dashboard controls.
+- Sidebar controls.
+- Lens AI commands.
+- Settings.
+
+The mode must be stored in the database and synchronized across sessions and devices.
+
+Lens AI must understand commands such as:
+
+"Switch to Work Mode."
+
+"Activate Sleep Mode."
+
+"Show me my active tasks."
+
+"Find projects matching my skills."
+
+These commands must trigger actual application actions through authorized tools.
+
+Never respond with a generic inability to interact with the application when the requested action is supported.
+
+==================================================
+07. LENS AI — THE INTELLIGENT AGENT
+==================================================
+
+Lens AI is the central intelligence of Firework AI.
+
+It must operate as an AI AGENT, not merely a conversational chatbot.
+
+Use Google's Gemini API through secure server-side integration.
+
+Build Lens AI as a modular agent system.
+
+CORE CAPABILITIES:
+
+A. INTENT UNDERSTANDING
+
+Before responding, Lens AI must:
+1. Analyze the user's message.
+2. Identify the user's actual intention.
+3. Understand the context.
+4. Identify the relevant application feature.
+5. Determine whether an action is necessary.
+6. Identify required parameters.
+7. Execute the appropriate authorized tool.
+8. Verify the operation result.
+9. Return a concise and accurate response.
+
+Do not treat every message as a request for general information.
+
+B. APPLICATION CONTROL
+
+Lens AI must understand and interact with Firework AI itself.
+
+Examples:
+
+User: "Open my projects."
+
+Action: Navigate to the projects page.
+
+User: "Switch to Sleep Mode."
+
+Action: Update the user's mode in the database and update the interface.
+
+User: "Show me new projects related to design."
+
+Action: Query the projects database using relevant filters.
+
+User: "Save this project."
+
+Action: Save the selected project to the user's account.
+
+User: "Create a task for tomorrow."
+
+Action: Create a persistent task record after resolving the date and required details.
+
+User: "Find me a suitable freelancer."
+
+Action: Search the freelancer database based on the requested criteria.
+
+C. TOOL CALLING
+
+Implement structured function calling.
+
+Lens AI should have access to authorized application tools such as:
+
+- get_user_profile
+- update_user_profile
+- get_user_mode
+- set_user_mode
+- search_projects
+- get_project_details
+- create_project
+- update_project
+- save_project
+- submit_proposal
+- search_freelancers
+- get_freelancer_profile
+- send_message
+- get_conversations
+- create_task
+- update_task
+- get_tasks
+- get_notifications
+- mark_notification_read
+- get_dashboard_data
+- search_platform
+- navigate_to_page
+
+Every tool must have:
+- Defined input schema.
+- Parameter validation.
+- Authorization checks.
+- Error handling.
+- Execution status.
+- Structured results.
+
+Only execute operations that the authenticated user is authorized to perform.
+
+Require user confirmation before consequential actions such as publishing a project, submitting a proposal, or sending a message when appropriate.
+
+Never claim an operation succeeded unless the backend confirms success.
+
+D. CONTEXTUAL MEMORY
+
+Lens AI should understand:
+- Current user identity.
+- Account type.
+- Current application mode.
+- User skills.
+- Professional interests.
+- Active projects.
+- Relevant previous conversations.
+- User preferences.
+
+Store conversation history securely.
+
+Use relevant context without exposing private information to unauthorized users.
+
+E. INTELLIGENT RECOMMENDATIONS
+
+Lens AI should recommend:
+- Suitable projects.
+- Relevant freelancers.
+- Skills the user may need.
+- Useful next actions.
+- Project management improvements.
+
+Recommendations must be based on actual platform data.
+
+F. CONVERSATIONAL EXPERIENCE
+
+Create a premium AI interface with:
+- Streaming responses.
+- Markdown rendering.
+- Code formatting when appropriate.
+- Conversation history.
+- New conversation.
+- Conversation search.
+- Copy response.
+- Regenerate response.
+- Stop generation.
+- Suggested prompts.
+- Tool execution indicators.
+- Clear error messages.
+
+G. LENS AI VISUAL IDENTITY
+
+Give Lens AI a distinctive but minimal visual identity.
+
+Use a refined abstract lens-inspired symbol.
+
+Avoid excessive glowing circles, generic robot illustrations, and distracting decorations.
+
+Create:
+- Lens AI chat workspace.
+- Compact assistant panel.
+- Expandable full-screen interface.
+- Contextual floating assistant entry point.
+
+==================================================
+08. PROJECT MARKETPLACE
+==================================================
+
+Build a fully functional marketplace.
+
+PROJECT DISCOVERY:
+
+Users must be able to browse and search projects.
+
+Filters:
+- Category.
+- Required skills.
+- Budget.
+- Project type.
+- Experience level.
+- Remote availability.
+- Date posted.
+- Project status.
+
+Project categories should be configurable.
+
+PROJECT DETAILS:
+
+Every project should have:
+- Title.
+- Description.
+- Category.
+- Required skills.
+- Budget type.
+- Budget amount or range.
+- Expected duration.
+- Experience level.
+- Client information.
+- Creation date.
+- Application deadline.
+- Project status.
+
+PROJECT ACTIONS:
+
+- Save project.
+- Share project.
+- Apply to project.
+- Ask Lens AI about the project.
+- View client profile.
+- Report inappropriate listings.
+
+PROJECT CREATION:
+
+Clients must be able to publish projects through a structured form.
+
+Include:
+- Project title.
+- Description.
+- Category.
+- Skills.
+- Budget.
+- Duration.
+- Requirements.
+- Deadline.
+
+Validate all inputs.
+
+Save drafts automatically where appropriate.
+
+Only publish after explicit confirmation.
+
+==================================================
+09. FREELANCER DISCOVERY
+==================================================
+
+Build a searchable freelancer directory.
+
+Include:
+- Search by name.
+- Search by skill.
+- Search by category.
+- Search by professional title.
+- Availability filtering.
+- Experience filtering.
+- Portfolio browsing.
+
+Freelancer cards should contain:
+- Profile picture.
+- Name.
+- Professional title.
+- Main skills.
+- Short biography.
+- Availability.
+- Portfolio preview.
+
+Actions:
+- View profile.
+- Save freelancer.
+- Contact freelancer.
+- Ask Lens AI to evaluate profile relevance.
+
+Do not fabricate ratings, reviews, or completed work.
+
+==================================================
+10. PROPOSALS AND PROJECT MANAGEMENT
+==================================================
+
+Implement the complete proposal workflow.
+
+FREELANCER:
+
+- Submit proposal.
+- Describe approach.
+- Provide estimated duration.
+- Submit a proposed budget.
+- View proposal status.
+- Withdraw proposal where permitted.
+
+CLIENT:
+
+- View received proposals.
+- Compare applicants.
+- Review portfolios.
+- Accept or reject proposals.
+- Communicate with applicants.
+
+PROPOSAL STATUSES:
+
+- Draft.
+- Submitted.
+- Under Review.
+- Accepted.
+- Rejected.
+- Withdrawn.
+
+PROJECT WORKSPACE:
+
+After an engagement is accepted, provide a workspace containing:
+- Project overview.
+- Tasks.
+- Milestones.
+- Progress.
+- Deadlines.
+- Files.
+- Conversations.
+- Activity history.
+
+Implement role-based access control.
+
+==================================================
+11. MESSAGING AND COLLABORATION
+==================================================
+
+Create a modern messaging system.
+
+Features:
+- One-to-one conversations.
+- Conversation list.
+- Real-time message updates.
+- Message timestamps.
+- Unread message indicators.
+- Message search.
+- File attachments with secure storage.
+- Conversation-specific project context.
+
+Use real-time backend capabilities.
+
+Only conversation participants can access private messages and attachments.
+
+==================================================
+12. TASK MANAGEMENT
+==================================================
+
+Build a task management system.
+
+Users can:
+- Create tasks.
+- Edit tasks.
+- Delete tasks.
+- Set deadlines.
+- Assign tasks where authorized.
+- Change task status.
+- Add descriptions.
+- Organize tasks by project.
+- Filter and search tasks.
+
+Task statuses:
+- To Do.
+- In Progress.
+- Review.
+- Completed.
+
+Include:
+- List view.
+- Kanban view.
+- Calendar view.
+
+Synchronize all changes with the database.
+
+==================================================
+13. NOTIFICATIONS
+==================================================
+
+Implement an actual notification center.
+
+Notification events may include:
+- New proposal.
+- Proposal acceptance.
+- Proposal rejection.
+- New message.
+- Project update.
+- Task assignment.
+- Upcoming deadline.
+- Important account activity.
+
+Features:
+- Read/unread states.
+- Mark all as read.
+- Notification preferences.
+- Relevant navigation on notification selection.
+
+Do not generate fake notifications.
+
+==================================================
+14. GLOBAL SEARCH
+==================================================
+
+Implement unified search across:
+
+- Projects.
+- Freelancers.
+- Skills.
+- Messages where authorized.
+- Tasks.
+- Saved items.
+
+Include:
+- Search suggestions.
+- Recent searches.
+- Category filters.
+- Keyboard navigation.
+- Empty states.
+- Search result highlighting.
+
+==================================================
+15. SAVED ITEMS
+==================================================
+
+Create a dedicated saved-items section.
+
+Users can save:
+- Projects.
+- Freelancers.
+- Other supported professional resources.
+
+Store saved items in the database and synchronize them across devices.
+
+==================================================
+16. SETTINGS AND PERSONALIZATION
+==================================================
+
+Create a comprehensive settings center.
+
+Sections:
+
+ACCOUNT:
+- Personal details.
+- Profile.
+- Email.
+- Password.
+- Account type information.
+
+APPEARANCE:
+- Light.
+- Dark.
+- System default.
+- Interface density.
+
+PREFERENCES:
+- Language.
+- Default workspace.
+- Work Mode preferences.
+- Sleep Mode preferences.
+
+NOTIFICATIONS:
+- Messages.
+- Projects.
+- Proposals.
+- Deadlines.
+- AI recommendations.
+
+PRIVACY:
+- Profile visibility.
+- Discoverability.
+- Data controls.
+- Session management.
+
+AI SETTINGS:
+- Lens AI response preferences.
+- Conversation history.
+- Context permissions.
+- AI personalization controls.
+
+==================================================
+17. DATABASE AND BACKEND ARCHITECTURE
+==================================================
+
+Use Firebase as the primary backend infrastructure, integrated through Google AI Studio where supported.
+
+Preferred services:
+
+- Firebase Authentication.
+- Cloud Firestore.
+- Firebase Storage.
+- Cloud Functions or secure server-side API routes.
+- Firebase App Check where supported.
+
+Build a properly structured database.
+
+Suggested collections:
+
+users
+user_preferences
+user_skills
+user_portfolios
+projects
+project_skills
+proposals
+engagements
+milestones
+tasks
+conversations
+messages
+notifications
+saved_items
+ai_conversations
+ai_messages
+ai_tool_executions
+activity_logs
+reports
+
+Every document must have appropriate identifiers and timestamps.
+
+DATABASE REQUIREMENTS:
+
+- Persistent data.
+- Valid relationships through document references or identifiers.
+- Input validation.
+- Consistent schemas.
+- Pagination.
+- Efficient queries.
+- Proper indexing.
+- Server-side validation.
+- Error handling.
+- Data ownership checks.
+
+SECURITY:
+
+Implement strict Firestore Security Rules.
+
+Users must not access another user's private data.
+
+Clients must not modify freelancer-owned private data.
+
+Freelancers must not modify client-owned project information without authorization.
+
+Never expose privileged credentials or API keys in client-side code.
+
+Use server-side secret management.
+
+Do not trust frontend authorization alone.
+
+==================================================
+18. ADMINISTRATION
+==================================================
+
+Build a protected administration dashboard.
+
+Only authorized administrators can access it.
+
+Include:
+
+- User management.
+- Project moderation.
+- Reports.
+- Account status management.
+- Platform activity.
+- Category management.
+- Basic platform analytics.
+- System configuration.
+
+Do not allow normal users to access administrative operations.
+
+==================================================
+19. ANALYTICS AND ACTIVITY
+==================================================
+
+Build a useful activity center.
+
+Display actual information such as:
+- Projects published.
+- Proposals submitted.
+- Active engagements.
+- Completed tasks.
+- Recent platform activities.
+
+Only show statistics supported by stored records.
+
+Use lightweight charts when they genuinely improve understanding.
+
+==================================================
+20. LANGUAGE AND INTERNATIONALIZATION
+==================================================
+
+Support:
+
+- Arabic.
+- English.
+
+Implement complete RTL and LTR support.
+
+Language switching must:
+- Update navigation.
+- Update forms.
+- Update buttons.
+- Update dialogs.
+- Update notifications.
+- Update Lens AI interface.
+- Preserve the selected language.
+
+Never mix Arabic and English layouts incorrectly.
+
+==================================================
+21. RESPONSIVE DESIGN
+==================================================
+
+Although the primary target is macOS desktop, support:
+
+- MacBook screens.
+- Large desktop displays.
+- Tablets.
+- Mobile phones.
+
+On mobile:
+- Replace the desktop sidebar with a suitable navigation pattern.
+- Adapt dashboard cards.
+- Preserve important actions.
+- Optimize Lens AI.
+- Maintain readable typography.
+- Avoid horizontal overflow.
+
+==================================================
+22. PERFORMANCE AND ACCESSIBILITY
+==================================================
+
+Implement:
+
+- Lazy loading.
+- Code splitting.
+- Optimized images.
+- Efficient database queries.
+- Loading states.
+- Error boundaries.
+- Responsive components.
+- Semantic HTML.
+- Keyboard accessibility.
+- Proper focus management.
+- Accessible contrast.
+- Reduced motion support.
+
+Avoid unnecessarily heavy animations and excessive rendering.
+
+==================================================
+23. TECHNICAL IMPLEMENTATION
+==================================================
+
+Use a modern, maintainable architecture.
+
+Preferred stack:
+
+Frontend:
+- React.
+- TypeScript.
+- Modern component architecture.
+- Tailwind CSS.
+- Framer Motion.
+- Lucide icons.
+
+Backend:
+- Firebase Authentication.
+- Cloud Firestore.
+- Firebase Storage.
+- Cloud Functions or secure backend endpoints.
+
+AI:
+- Google Gemini API.
+- Structured function calling.
+- Server-side AI orchestration.
+- Context-aware tool execution.
+
+Architecture requirements:
+
+- Reusable components.
+- Clear separation of concerns.
+- Strong TypeScript typing.
+- Centralized error handling.
+- Protected application routes.
+- Secure environment configuration.
+- Modular services.
+- Reusable hooks.
+- Maintainable folder structure.
+
+Do not place all application logic in one component.
+
+Do not hardcode user information.
+
+Do not use localStorage as a replacement for the primary database.
+
+Use local persistence only for suitable non-sensitive interface preferences or temporary client-side state.
+
+==================================================
+24. REAL FUNCTIONALITY REQUIREMENTS
+==================================================
+
+This section is critical.
+
+Do not build a visual imitation of an application.
+
+Build the actual application behavior.
+
+For every interactive element:
+
+1. Define its purpose.
+2. Implement its event handler.
+3. Connect it to the correct application service.
+4. Validate its input.
+5. Execute the operation.
+6. Update the database when required.
+7. Update the interface.
+8. Display the actual result.
+9. Handle failures correctly.
+
+Examples:
+
+- A save button must save an item to the database.
+- A mode switch must persist the new mode.
+- A proposal button must create a proposal record.
+- A messaging interface must save and retrieve messages.
+- A task creation form must create persistent tasks.
+- A project search must query actual project records.
+- Lens AI must execute supported application tools.
+
+Never use hardcoded fake users, fake project lists, fake conversations, or invented analytics as if they were actual platform records.
+
+When the database is empty, show a meaningful empty state.
+
+When a service is not configured, clearly identify the missing configuration and provide an appropriate setup path. Do not pretend it is working.
+
+==================================================
+25. SECURITY AND USER TRUST
+==================================================
+
+Implement:
+
+- Authentication checks.
+- Authorization checks.
+- Input sanitization.
+- Secure API endpoints.
+- Rate limiting for sensitive endpoints.
+- Secure file uploads.
+- Protected administrative routes.
+- Safe AI tool execution.
+- Privacy-aware conversation storage.
+
+Lens AI must never bypass application permissions.
+
+AI-generated actions must be validated by the backend.
+
+Do not expose internal secrets, private user information, or privileged system operations.
+
+==================================================
+26. FINAL USER EXPERIENCE
+==================================================
+
+The final product should feel like a premium macOS application accessible through the browser.
+
+The experience should be:
+
+- Beautiful without being visually overwhelming.
+- Intelligent without being intrusive.
+- Animated without being slow.
+- Minimal without sacrificing functionality.
+- Powerful without becoming complicated.
+
+The interface should make Lens AI feel like an integrated intelligence layer across the entire platform.
+
+Users should be able to move naturally between:
+- Their workspace.
+- Project discovery.
+- Freelancer discovery.
+- Project management.
+- Messaging.
+- Lens AI.
+
+==================================================
+27. BUILD EXECUTION PLAN
+==================================================
+
+Do not attempt to produce a huge collection of disconnected visual components.
+
+Build the application systematically.
+
+PHASE 1:
+Establish the application architecture, design system, routing, responsive layout, and navigation.
+
+PHASE 2:
+Implement Firebase initialization, authentication, database structure, and security rules.
+
+PHASE 3:
+Implement user profiles, account types, dashboard, and persistent Work/Sleep modes.
+
+PHASE 4:
+Implement projects, freelancer discovery, proposals, and project management.
+
+PHASE 5:
+Implement messaging, tasks, notifications, saved items, and search.
+
+PHASE 6:
+Implement Lens AI, intent understanding, structured tool calling, application control, and contextual memory.
+
+PHASE 7:
+Implement administration, analytics, internationalization, and personalization.
+
+PHASE 8:
+Test the entire system, fix integration errors, validate permissions, optimize performance, and polish animations.
+
+IMPORTANT EXECUTION RULES:
+
+- Start by inspecting the existing project before making changes.
+- Preserve working code and existing useful functionality.
+- Do not overwrite existing project files blindly.
+- Build reusable components.
+- Implement backend functionality alongside its corresponding UI.
+- Do not leave important features as TODO comments.
+- Do not claim a feature is implemented until its code and required integration exist.
+- Do not silently replace failed backend operations with fake frontend behavior.
+- Test all major user workflows.
+
+If a feature cannot be completed because an external service requires credentials or configuration, build its integration structure, explain the exact missing requirement, and leave the feature in an honest unconfigured state.
+
+==================================================
+28. FINAL ACCEPTANCE CRITERIA
+==================================================
+
+The project is considered ready for its initial release only when:
+
+1. Users can register and log in.
+2. Users can maintain their profiles.
+3. Different account types have appropriate permissions.
+4. Work Mode and Sleep Mode function and persist.
+5. Clients can create and manage projects.
+6. Freelancers can discover projects.
+7. Freelancers can submit proposals.
+8. Clients can review proposals.
+9. Users can communicate.
+10. Users can create and manage tasks.
+11. Notifications work.
+12. Saved items persist.
+13. Lens AI understands application-related commands.
+14. Lens AI can execute authorized actions.
+15. AI tool execution results are verified.
+16. Search retrieves actual database information.
+17. Light and Dark themes work consistently.
+18. Arabic and English layouts work correctly.
+19. Responsive layouts work on desktop, tablet, and mobile.
+20. Database security rules are tested.
+21. There are no major broken navigation elements.
+22. Empty states and error states are handled properly.
+
+FINAL DIRECTIVE:
+
+Build Firework AI as a coherent, integrated, intelligent work platform.
+
+Prioritize functionality, architecture, data integrity, security, and user experience equally.
+
+Do not sacrifice actual functionality for visual appearance.
+
+Do not sacrifice visual quality for technical simplicity.
+
+Deliver a polished, maintainable, and extensible application that can evolve into a serious commercial product.
